@@ -25,6 +25,12 @@ jobs:
             tools: true
             bin: "./bin/godot.osx.opt.tools.64"
 
+          - name: Headless (target=release_debug, tools=yes)
+            cache-name: macos-headless
+            target: release_debug
+            tools: true
+            bin: "./bin/godot_server.osx.opt.tools.64"
+
           - name: Template (target=release, tools=no)
             cache-name: macos-template
             target: release
